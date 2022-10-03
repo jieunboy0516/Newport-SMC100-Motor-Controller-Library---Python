@@ -18,25 +18,27 @@ https://www.newport.com/medias/sys_master/images/images/h8d/h3a/8797263101982/SM
 
 #### Move
 
-```http
-  GET /api/items
+```python
+  move_absolute(controller, position)
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `  move_absolute(controller, position)
+` | `string` | **Required**. Your motor number (usually 1) |
+| `position ` | `string` | **Required**. position to move to between 0-27|
 
 #### Get item
 
-```http
-  GET /api/items/${id}
+```python
+  reset(controller)
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `controller`      | `string` | **Required**. Your motor number (usually 1) |
 
-#### add(num1, num2)
+#### move_relative(controller, position)
 
-Takes two numbers and returns the sum.
+Is like move_absolute() but is in moving in relative position
 
