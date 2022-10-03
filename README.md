@@ -24,8 +24,7 @@ https://www.newport.com/medias/sys_master/images/images/h8d/h3a/8797263101982/SM
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `  move_absolute(controller, position)
-` | `string` | **Required**. Your motor number (usually 1) |
+|`controller` | `string` | **Required**. Your motor number (usually 1) |
 | `position ` | `string` | **Required**. position to move to between 0-27|
 
 #### Get item
